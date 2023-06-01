@@ -1,0 +1,109 @@
+* {
+  font-size: 12px;
+}
+
+body {
+  margin-top: 80px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.headerTitle {
+  /* position: absolute;
+  left: 200px;
+  top: 60px; */
+  font-size: 3rem;
+  color: red;
+  cursor: default;
+  margin-left: 20px;
+}
+
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 150px;
+}
+
+.inputSearch {
+  width: 400px;
+  height: 40px;
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.searchBtn {
+  width: 90px;
+  height: 50px;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.movie-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 20px 40px;
+  border: 1px solid;
+  border-radius: 30px;
+}
+
+.modeBtn {
+  width: 400px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.movie-card > img,
+.movie-card > h5,
+#movieReview,
+#movieRate {
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+
+.movie-card > h5,
+#movieReview,
+#movieRate {
+  padding: 10px;
+}
+
+.movie-card > img {
+  width: 100%;
+}
+
+.movie-card > h5 {
+  font-family: "Anton", sans-serif;
+  font-size: 2.1rem;
+  margin: 20px 0;
+  cursor: text;
+}
+
+#movieReview {
+  font-family: "Abel", sans-serif;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: text;
+}
+
+#movieRate {
+  font-family: "Abel", sans-serif;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
