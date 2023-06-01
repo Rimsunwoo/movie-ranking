@@ -25,7 +25,7 @@ let fetchMovie = async () => {
 // html 생성
 let makeCard = async () => {
   const movieData = await fetchMovie();
-  movieData.forEach((movie) => {
+  movieData.map((movie) => {
     let tempHtml = `<div class="movie-card" onClick="clickCard(${movie.id})">
     <img
       id="movieImg"
